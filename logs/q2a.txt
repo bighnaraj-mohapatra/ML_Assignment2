@@ -1,0 +1,8 @@
+    === Q2(a): SAMME AdaBoost Toy Example (3 Classes, 6 Samples) ===
+Initial sample weights (w): [0.16666667 0.16666667 0.16666667 0.16666667 0.16666667 0.16666667]
+True labels y:               [0 0 1 1 2 2]
+Weak learner predictions h(x): [0 0 1 1 1 1]
+Weighted error (epsilon_t):  0.3333
+Random guessing threshold:   0.6667
+Learner weight (alpha_t):    1.3863
+Updated normalized weights:  [0.08333333 0.08333333 0.08333333 0.08333333 0.33333333 0.33333333]

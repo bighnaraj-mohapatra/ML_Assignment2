@@ -1,0 +1,23 @@
+Model      B      TrAcc    VaAcc    TeAcc    Time(s) 
+----------------------------------------------------
+Bagging    25     1.0000   0.8500   0.7875   59.51   
+Bagging    50     1.0000   0.8500   0.8000   103.54  
+Bagging    100    1.0000   0.9000   0.8375   207.46  
+Boosting   25     0.5125   0.3000   0.2125   15.73   
+Boosting   50     0.7125   0.3750   0.3625   30.31   
+Boosting   100    0.9708   0.4750   0.4375   61.30   
+----------------------------------------------------
+
+--- Heavy Training Face Inspection ---
+Index: 140, True ID: 23, Final Boosting Weight: 0.0485
+First 10 rounds prediction history (Round, Pred, Incorrect):
+Round 1: Pred=0, Incorrect=True
+Round 2: Pred=1, Incorrect=True
+Round 3: Pred=2, Incorrect=True
+Round 4: Pred=23, Incorrect=False
+Round 5: Pred=4, Incorrect=True
+Round 6: Pred=8, Incorrect=True
+Round 7: Pred=14, Incorrect=True
+Round 8: Pred=38, Incorrect=True
+Round 9: Pred=2, Incorrect=True
+Round 10: Pred=3, Incorrect=True

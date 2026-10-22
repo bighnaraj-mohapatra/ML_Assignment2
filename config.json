@@ -1,0 +1,11 @@
+{
+  "dataset": "olivetti_faces",
+  "roll_number": "M26CSA011",
+  "seed": 26011,
+  "split_per_identity": {"train": 6, "val": 2, "test": 2},
+  "mask_region": {"rows": [24, 39], "cols": [24, 39]},
+  "selected_single_tree": {"max_depth": null, "min_samples_leaf": 1},
+  "selected_bagging": {"B": 100, "max_depth": null, "min_samples_leaf": 1},
+  "selected_boosting": {"algorithm": "SAMME", "max_depth": 4, "T": 100},
+  "q3_refits": 30
+}

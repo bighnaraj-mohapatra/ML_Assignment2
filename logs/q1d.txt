@@ -1,0 +1,14 @@
+--- Q1(d) Final Evaluation ---
+Single Tree - Clean Acc: 0.5250, Masked Acc: 0.2750
+Bagging(100) - Clean Acc: 0.7750, Masked Acc: 0.6000
+Bagging Margins - Clean: 0.2795, Masked: 0.1391
+
+--- Case Study Details ---
+
+Bagging Corrects Tree:
+  Test Index 2 | True ID: 1 | Tree Pred: 9 | Top Votes (Class: Count): [(np.int64(1), np.int64(17)), (np.int64(26), np.int64(11)), (np.int64(31), np.int64(7))]
+  Test Index 11 | True ID: 5 | Tree Pred: 17 | Top Votes (Class: Count): [(np.int64(5), np.int64(48)), (np.int64(39), np.int64(11)), (np.int64(4), np.int64(9))]
+
+Both Models Fail:
+  Test Index 1 | True ID: 0 | Tree Pred: 25 | Top Votes (Class: Count): [(np.int64(15), np.int64(14)), (np.int64(0), np.int64(11)), (np.int64(3), np.int64(10))]
+  Test Index 4 | True ID: 2 | Tree Pred: 37 | Top Votes (Class: Count): [(np.int64(12), np.int64(22)), (np.int64(9), np.int64(11)), (np.int64(2), np.int64(9))]

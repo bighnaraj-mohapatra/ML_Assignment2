@@ -1,0 +1,17 @@
+1/3 Running Selected Single Tree (30 refits)...
+2/3 Running Final Bagged Model (B=100, 30 refits)...
+  Bagging Refit 01/30 done (149.5s)
+  Bagging Refit 05/30 done (148.3s)
+  Bagging Refit 10/30 done (149.6s)
+  Bagging Refit 15/30 done (146.2s)
+  Bagging Refit 20/30 done (147.5s)
+  Bagging Refit 25/30 done (150.3s)
+  Bagging Refit 30/30 done (147.6s)
+3/3 Running Selected Boosting Model (d=4, R=100, 30 refits)...
+
+=== Q3(a) Final Results (30 Refits) ===
+Model                    Bias^2     Variance   Mean Test Acc   Std Test Acc
+------------------------------------------------------------------------
+Single Tree (None)       0.4210     0.6423     0.4683          0.0419      
+Bagging (B=100)          0.5270     0.0237     0.7325          0.0409      
+Boosting (d=4, T=100)    0.8982     0.0151     0.2604          0.0698      

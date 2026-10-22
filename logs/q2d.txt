@@ -1,0 +1,56 @@
+=== Q2(d) Clean vs. Masked Evaluation ===
+Single Tree   -> Clean Acc: 0.5250, Masked Acc: 0.2750, Clean Conf: 1.0000, Masked Conf: 1.0000
+Bagging(100)  -> Clean Acc: 0.7750, Masked Acc: 0.6250, Clean Conf: 0.3904, Masked Conf: 0.2600
+Boosting(100) -> Clean Acc: 0.4375, Masked Acc: 0.3875, Clean Conf: 0.1225, Masked Conf: 0.1169
+
+=== Q2(d) Divergent Face Case Studies ===
+Test Index 0 (True ID 0):
+  Bagging  -> Clean: 0 (Vote=0.30, Disag=0.8596) | Masked: 0 (Vote=0.20, Disag=0.9137)
+  Boosting -> Clean: 3 (Prob=0.1184) | Masked: 20 (Prob=0.1238) | ID 0 Train Weight Sum: 0.0085
+Test Index 2 (True ID 1):
+  Bagging  -> Clean: 1 (Vote=0.17, Disag=0.9418) | Masked: 35 (Vote=0.13, Disag=0.9416)
+  Boosting -> Clean: 3 (Prob=0.1190) | Masked: 3 (Prob=0.1091) | ID 1 Train Weight Sum: 0.0380
+Test Index 4 (True ID 2):
+  Bagging  -> Clean: 12 (Vote=0.22, Disag=0.9178) | Masked: 35 (Vote=0.13, Disag=0.9459)
+  Boosting -> Clean: 2 (Prob=0.1284) | Masked: 2 (Prob=0.1284) | ID 2 Train Weight Sum: 0.0233
+Test Index 5 (True ID 2):
+  Bagging  -> Clean: 12 (Vote=0.21, Disag=0.9226) | Masked: 35 (Vote=0.13, Disag=0.9477)
+  Boosting -> Clean: 2 (Prob=0.1078) | Masked: 2 (Prob=0.1078) | ID 2 Train Weight Sum: 0.0233
+Test Index 14 (True ID 7):
+  Bagging  -> Clean: 7 (Vote=0.58, Disag=0.6438) | Masked: 7 (Vote=0.26, Disag=0.8986)
+  Boosting -> Clean: 7 (Prob=0.1068) | Masked: 3 (Prob=0.0990) | ID 7 Train Weight Sum: 0.0185
+Test Index 15 (True ID 7):
+  Bagging  -> Clean: 7 (Vote=0.31, Disag=0.8796) | Masked: 7 (Vote=0.15, Disag=0.9465)
+  Boosting -> Clean: 3 (Prob=0.0985) | Masked: 20 (Prob=0.0989) | ID 7 Train Weight Sum: 0.0185
+Test Index 16 (True ID 8):
+  Bagging  -> Clean: 8 (Vote=0.29, Disag=0.8994) | Masked: 8 (Vote=0.12, Disag=0.9426)
+  Boosting -> Clean: 8 (Prob=0.1333) | Masked: 3 (Prob=0.1091) | ID 8 Train Weight Sum: 0.0068
+Test Index 20 (True ID 10):
+  Bagging  -> Clean: 10 (Vote=0.38, Disag=0.7812) | Masked: 31 (Vote=0.22, Disag=0.8964)
+  Boosting -> Clean: 31 (Prob=0.1095) | Masked: 31 (Prob=0.1095) | ID 10 Train Weight Sum: 0.0135
+Test Index 25 (True ID 12):
+  Bagging  -> Clean: 12 (Vote=0.22, Disag=0.9147) | Masked: 35 (Vote=0.14, Disag=0.9440)
+  Boosting -> Clean: 3 (Prob=0.1190) | Masked: 3 (Prob=0.1091) | ID 12 Train Weight Sum: 0.0371
+Test Index 27 (True ID 13):
+  Bagging  -> Clean: 13 (Vote=0.44, Disag=0.7927) | Masked: 13 (Vote=0.36, Disag=0.8499)
+  Boosting -> Clean: 2 (Prob=0.1284) | Masked: 13 (Prob=0.1422) | ID 13 Train Weight Sum: 0.0056
+Test Index 40 (True ID 20):
+  Bagging  -> Clean: 20 (Vote=0.35, Disag=0.8560) | Masked: 20 (Vote=0.22, Disag=0.9046)
+  Boosting -> Clean: 12 (Prob=0.1128) | Masked: 20 (Prob=0.1097) | ID 20 Train Weight Sum: 0.0373
+Test Index 44 (True ID 22):
+  Bagging  -> Clean: 22 (Vote=0.24, Disag=0.9000) | Masked: 35 (Vote=0.17, Disag=0.9327)
+  Boosting -> Clean: 3 (Prob=0.1190) | Masked: 3 (Prob=0.1190) | ID 22 Train Weight Sum: 0.0328
+Test Index 48 (True ID 24):
+  Bagging  -> Clean: 24 (Vote=0.22, Disag=0.9253) | Masked: 35 (Vote=0.13, Disag=0.9442)
+  Boosting -> Clean: 3 (Prob=0.1190) | Masked: 3 (Prob=0.1091) | ID 24 Train Weight Sum: 0.0089
+Test Index 50 (True ID 25):
+  Bagging  -> Clean: 25 (Vote=0.29, Disag=0.8731) | Masked: 25 (Vote=0.18, Disag=0.9172)
+  Boosting -> Clean: 25 (Prob=0.1002) | Masked: 3 (Prob=0.0891) | ID 25 Train Weight Sum: 0.0057
+Test Index 54 (True ID 27):
+  Bagging  -> Clean: 27 (Vote=0.26, Disag=0.9075) | Masked: 35 (Vote=0.15, Disag=0.9349)
+  Boosting -> Clean: 3 (Prob=0.1190) | Masked: 3 (Prob=0.1091) | ID 27 Train Weight Sum: 0.0149
+Test Index 78 (True ID 39):
+  Bagging  -> Clean: 39 (Vote=0.19, Disag=0.9077) | Masked: 12 (Vote=0.12, Disag=0.9418)
+  Boosting -> Clean: 3 (Prob=0.1091) | Masked: 3 (Prob=0.1091) | ID 39 Train Weight Sum: 0.0305
+
+Saved Q2(d) results to outputs/q2d_summary.json
